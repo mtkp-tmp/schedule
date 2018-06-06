@@ -1,5 +1,9 @@
--- Вызов функции:
--- SELECT * FROM take_schedule_on_date('06-06-2018');
+/*
+Вызов функции:
+SELECT * FROM take_schedule_on_date('06-06-2018');
+*/
+
+-- Создание функции получения расписания по введенной дате
 
 CREATE OR REPLACE FUNCTION take_schedule_on_date(date)
 RETURNS TABLE(День_недели VARCHAR, № int, Время VARCHAR, Группа VARCHAR,
